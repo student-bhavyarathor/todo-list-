@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e88d67;
+    font-family: 'poppins',sans-serif;
+}
+
+.container {
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color:  #f3f7ec;
+    margin-left: 33%;
+    margin-top: 5px;
+}
+
+h1 img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    width: 270px;
+    padding: 9px;
+    border: 5px #006989;
+    outline: none;
+}
+
+button {
+    width: 66px;
+    height: 41px;
+    background-color: rgb(16, 14, 16);
+    color: #005c78 ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 19px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #49243e;
+    font-style: oblique;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('c:/Users/ratho/Downloads/radio.png');
+     background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color:#704264;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('c:/Users/ratho/Downloads/check.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #dac0a3;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #102C57;
+}
